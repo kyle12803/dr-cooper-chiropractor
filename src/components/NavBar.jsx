@@ -85,7 +85,7 @@ const NavBar = () => {
 					</button>
 				</div>
 
-				<div class={`${isMenuOpen ? "block" : "hidden"} absolute w-full`} id="navbar-default">
+				<div class={`${isMenuOpen ? "block" : "hidden"} absolute w-full z-10`} id="navbar-default">
 					<ul class=" font-medium flex flex-col p-4 mx-6 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
 						{Object.entries(links).map(([name, route], index) => (
 							<li key={index}>

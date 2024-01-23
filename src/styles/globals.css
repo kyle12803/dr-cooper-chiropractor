@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .page-container {
-	@apply bg-green-400 px-6 lg:px-8;
+	@apply relative px-6 pt-3 md:px-8 md:pt-5;
 }

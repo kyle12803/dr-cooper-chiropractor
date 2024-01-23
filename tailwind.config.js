@@ -16,6 +16,9 @@ module.exports = {
 				nav: "#FFA500",
 			},
 		},
+		rotate: {
+			30: "45deg",
+		},
 	},
 	plugins: [],
 };
