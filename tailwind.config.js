@@ -19,6 +19,9 @@ module.exports = {
 		rotate: {
 			30: "45deg",
 		},
+		fontFamily: {
+			serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+		},
 	},
 	plugins: [],
 };

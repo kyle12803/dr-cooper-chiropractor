@@ -12,11 +12,11 @@ const about = () => {
 				<link rel="icon" href="/derc-favicon.ico" />
 			</Head>
 			<NavBar />
-			<div className="page-container">
+			<div className="page-container max-w-screen-2xl">
 				<h1 className="font-medium text-4xl md:text-6xl text-center mb-10 font-serif">
 					Meet the Doctor
 				</h1>
-				<div className="flex flex-col md:flex-row items-center justify-start px-1 md:px-8">
+				<div className="flex flex-col md:flex-row items-center justify-start px-1 md:px-8 ">
 					<Image
 						src="/ezra.jpg"
 						alt="Dr. Ezra R. Cooper"

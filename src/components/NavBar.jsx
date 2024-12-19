@@ -21,25 +21,23 @@ const NavBar = () => {
 
 	return (
 		<header>
-			<nav className="bg-white relative flex flex-row items-center px-7">
-				<Link href={RouteNames.home}>
-					<Image
-						src="/derc.png"
-						alt="Dr. Ezra R. Cooper"
-						width={280}
-						height={208}
-						className="hidden md:flex my-4 w-28"
-					></Image>
+			<nav className="hidden md:flex bg-white relative flex-row items-center px-7 pt-6">
+				<Link href={RouteNames.home} className="text-xl text-gray-800 leading-tight">
+					<div className="flex flex-col">
+						<div className="-mb-2">
+							<span className="text-2xl font-semibold text-blue-300">Dr.</span>
+							<span className="text-xl leading-none"> Ezra R.</span>{" "}
+						</div>
+						<span className="text-2xl font-semibold text-blue-300">COOPER</span>
+					</div>
 				</Link>
+
 				<div className="hidden md:flex md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:gap-x-10">
 					{Object.entries(links).map(([name, route], index) => (
 						<div key={index} className="">
-							<Link
-								href={route}
-								className="text-gray-800 hover:text-nav group transition duration-200"
-							>
+							<Link href={route} className="text-gray-800 group transition duration-200">
 								{name}
-								<span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-nav mt-1"></span>
+								<span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-black mt-1"></span>
 							</Link>
 						</div>
 					))}
@@ -47,16 +45,16 @@ const NavBar = () => {
 			</nav>
 
 			{/* Mobile/Tablet Screen Menu */}
-			<nav className="md:hidden bg-white border-gray-200 dark:bg-gray-900">
+			<nav className="md:hidden bg-white border-gray-200 dark:bg-gray-900 my-5">
 				<div className="flex items-center justify-between mx-auto pt-1 px-6">
-					<Link href={RouteNames.home}>
-						<Image
-							src="/derc.png"
-							alt="Dr. Ezra R. Cooper"
-							width={280}
-							height={208}
-							className="my-4 w-20"
-						></Image>
+					<Link href={RouteNames.home} className="text-xl text-gray-800 leading-tight">
+						<div className="flex flex-col">
+							<div className="-mb-2">
+								<span className="text-lg md:text-2xl font-semibold text-blue-300">Dr.</span>
+								<span className="text-base md:text-xl leading-none"> Ezra R.</span>{" "}
+							</div>
+							<span className="text-lg md:text-2xl font-semibold text-blue-300">COOPER</span>
+						</div>
 					</Link>
 					<button
 						data-collapse-toggle="navbar-default"
