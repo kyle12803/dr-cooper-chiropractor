@@ -54,12 +54,12 @@ const office = () => {
 						<p className="text-gray-600 mt-4">
 							Contact us today to schedule an appointment or to learn more about our services.
 						</p>
-						<a
+						<Link
 							href="/contact"
 							className="mt-4 inline-block bg-blue-500 text-white font-medium py-3 px-6 rounded-md shadow hover:bg-blue-600 transition"
 						>
 							Contact Us
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
