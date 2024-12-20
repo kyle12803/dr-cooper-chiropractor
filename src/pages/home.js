@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import Footer from "../components/Footer";
 
 const home = () => {
 	return (
@@ -15,13 +16,9 @@ const home = () => {
 			<div className="page-container mt-3 mx-auto">
 				<div className="flex flex-col items-center p-3">
 					{/* Top Heading Section */}
-					<div className="flex flex-col  items-center justify-center">
-						<div className="text-xl md:text-3xl font-medium whitespace-nowrap ">
-							GET BACK TO HEALTH NOW...
-						</div>
-						<div className="text-xl md:text-3xl font-medium whitespace-nowrap ">
-							CHIROPRACTIC CAN CURE
-						</div>
+					<div className="flex flex-col items-center text-xl md:text-3xl font-medium whitespace-nowrap ">
+						<div>GET BACK TO HEALTH NOW...</div>
+						<div>CHIROPRACTIC CAN CURE</div>
 					</div>
 
 					{/* About Erza Section */}
@@ -52,7 +49,7 @@ const home = () => {
 								individuals.
 							</p>
 							<p className="indent-8 pt-3 text-gray-900">
-								Dr. Cooper worked with athletes of all ages and has takes care of CW Post and
+								Dr. Cooper has worked with athletes of all ages and has taken care of CW Post and
 								Syosset high school.
 							</p>
 							<p className="indent-8 pt-3 text-gray-900">
@@ -103,6 +100,7 @@ const home = () => {
 							</ul>
 						</div>
 					</div>
+					<Footer />
 				</div>
 			</div>
 		</>

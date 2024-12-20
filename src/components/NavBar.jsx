@@ -13,16 +13,16 @@ const NavBar = () => {
 
 	const links = {
 		Home: RouteNames.home,
-		About: RouteNames.about,
+		"Office Info": RouteNames.office,
 		"Contact Us": RouteNames.contact,
 	};
 
 	const { pathname } = useRouter();
 
 	return (
-		<header>
-			<nav className="hidden md:flex bg-white relative flex-row items-center px-7 pt-6">
-				<Link href={RouteNames.home} className="text-xl text-gray-800 leading-tight">
+		<header className="shadow-md">
+			<nav className="hidden md:flex relative flex-row items-center px-7 py-6">
+				<Link href={RouteNames.home} className="text-xl leading-tight">
 					<div className="flex flex-col">
 						<div className="-mb-2">
 							<span className="text-2xl font-semibold text-blue-300">Dr.</span>
@@ -32,22 +32,21 @@ const NavBar = () => {
 					</div>
 				</Link>
 
+				{/* Nav Links */}
 				<div className="hidden md:flex md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:gap-x-10">
 					{Object.entries(links).map(([name, route], index) => (
-						<div key={index} className="">
-							<Link href={route} className="text-gray-800 group transition duration-200">
-								{name}
-								<span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-black mt-1"></span>
-							</Link>
-						</div>
+						<Link key={index} href={route} className="text-gray-800 group transition duration-200">
+							{name}
+							<span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-blue-300 mt-1"></span>
+						</Link>
 					))}
 				</div>
 			</nav>
 
-			{/* Mobile/Tablet Screen Menu */}
-			<nav className="md:hidden bg-white border-gray-200 dark:bg-gray-900 my-5">
-				<div className="flex items-center justify-between mx-auto pt-1 px-6">
-					<Link href={RouteNames.home} className="text-xl text-gray-800 leading-tight">
+			{/* Mobile/Tablet Screen + Menu */}
+			<nav className="md:hidden py-4">
+				<div className="flex items-center justify-between mx-auto px-6">
+					<Link href={RouteNames.home} className="text-xl leading-tight">
 						<div className="flex flex-col">
 							<div className="-mb-2">
 								<span className="text-lg md:text-2xl font-semibold text-blue-300">Dr.</span>
@@ -59,7 +58,7 @@ const NavBar = () => {
 					<button
 						data-collapse-toggle="navbar-default"
 						type="button"
-						className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+						className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
 						aria-controls="navbar-default"
 						aria-expanded={isMenuOpen ? "true" : "false"}
 						onClick={toggleMenu}
@@ -84,7 +83,7 @@ const NavBar = () => {
 				</div>
 
 				<div class={`${isMenuOpen ? "block" : "hidden"} absolute w-full z-10`} id="navbar-default">
-					<ul class=" font-medium flex flex-col p-4 mx-6 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+					<ul class=" font-medium flex flex-col p-4 mx-6 border border-gray-100 rounded-lg bg-gray-50">
 						{Object.entries(links).map(([name, route], index) => (
 							<li key={index}>
 								<Link

@@ -1,5 +1,5 @@
 export const RouteNames = {
 	home: "/home",
-	about: "/about",
+	office: "/office",
 	contact: "/contact",
 };
