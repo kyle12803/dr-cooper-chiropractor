@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import Head from "next/head";
 import NavBar from "@/components/NavBar";
 
-const contact = () => {
+const Contact = () => {
 	const [formDetails, setFormDetails] = useState({
 		name: "",
 		email: "",
@@ -227,4 +227,4 @@ const contact = () => {
 	);
 };
 
-export default contact;
+export default Contact;
