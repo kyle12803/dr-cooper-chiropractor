@@ -7,7 +7,7 @@ const Footer = () => {
 		<>
 			<hr className="border-t-1 w-11/12 border-gray-300 mx-auto" />
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full text-center my-8">
-				{/* Office Section */}
+				{/* Office */}
 				<a
 					href="https://www.google.com/maps/place/108+Cold+Spring+Road,+Syosset,+NY+11791"
 					target="_blank"
@@ -24,7 +24,7 @@ const Footer = () => {
 					</div>
 				</a>
 
-				{/* Phone Section */}
+				{/* Phone */}
 				<a
 					href="tel:+15163641465"
 					className="group flex flex-col items-center text-gray-700 hover:text-blue-500"
@@ -39,9 +39,9 @@ const Footer = () => {
 					<div className="text-gray-400 group-hover:text-blue-500">+1 516-364-1465</div>
 				</a>
 
-				{/* Email Section */}
+				{/* Email */}
 				<a
-					href="mailto:contact@example.com"
+					href="mailto:ezracooperchiro@gmail.com"
 					className="group flex flex-col items-center text-gray-700 hover:text-blue-500"
 				>
 					<FontAwesomeIcon
@@ -51,7 +51,7 @@ const Footer = () => {
 					<div className="text-gray-500 font-semibold group-hover:text-blue-500">
 						Send us an Email
 					</div>
-					<div className="text-gray-400 group-hover:text-blue-500">contact@example.com</div>
+					<div className="text-gray-400 group-hover:text-blue-500">ezracooperchiro@gmail.com</div>
 				</a>
 			</div>
 		</>

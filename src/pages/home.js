@@ -15,13 +15,15 @@ const home = () => {
 			<NavBar />
 			<div className="page-container mt-3 mx-auto">
 				<div className="flex flex-col items-center p-3">
-					{/* Top Heading Section */}
+					{/* Top Heading */}
 					<div className="flex flex-col items-center text-xl md:text-3xl font-medium whitespace-nowrap ">
-						<div>GET BACK TO HEALTH NOW...</div>
-						<div>CHIROPRACTIC CAN CURE</div>
+						<h1 className="text-xl md:text-4xl font-bold tracking-wide">
+							GET BACK TO HEALTH NOW...
+						</h1>
+						<h2 className="text-lg md:text-3xl mt-3 font-medium">CHIROPRACTIC CAN CURE</h2>
 					</div>
 
-					{/* About Erza Section */}
+					{/* About Erza */}
 					<div className="mt-8 mb-10 flex flex-col md:flex-row items-center justify-start md:px-8 xl:px-12">
 						<Image
 							src="/ezra.jpg"
@@ -32,12 +34,10 @@ const home = () => {
 						/>
 
 						<div className="flex flex-col justify-center md:px-10">
-							<h2 className="font-medium text-2xl md:text-4xl text-center md:text-left ">
+							<h2 className="font-semibold text-2xl md:text-5xl text-center md:text-left ">
 								Dr. Ezra R. Cooper
 							</h2>
-							<h3 className="font-medium mb-6 md:mb-2 text-sm text-center md:text-left">
-								Chiropractor in Syosset, NY
-							</h3>
+							<h3 className="mb-6 text-lg text-center md:text-left">Chiropractor in Syosset, NY</h3>
 							<p className="indent-8 pt-3 text-gray-900">
 								Dr. Cooper is a Palmer Graduate Chiropractor. In 40 years of clinical practice Dr.
 								Cooper has developed specialized treatment plans for a variety of patients from 1
@@ -61,7 +61,7 @@ const home = () => {
 
 					<hr className="border-t-2 w-full border-gray-300" />
 
-					{/* Pain vs Drugs Section */}
+					{/* Pain vs Drugs */}
 					<div className="my-10 text-center">
 						<div className=" mb-4 text-2xl">
 							<span className="font-bold">PAIN:</span> Healing hands vs drugs
@@ -77,13 +77,15 @@ const home = () => {
 							with the results.
 						</div>
 
-						{/* Insurance Subsection */}
-						<div className="mt-5 text-sm">Most insurance accepted as full or part payment.</div>
+						{/* Insurance */}
+						<div className="mt-5 text-sm text-gray-700">
+							Most insurance accepted as full or part payment.
+						</div>
 					</div>
 
 					<hr className="border-t-2 w-full border-gray-300" />
 
-					{/* Specialties Section */}
+					{/* Specialties */}
 					<div className="my-10 text-center">
 						<h2 className="text-2xl font-bold mb-6">Our Services</h2>
 						<div className="md:grid md:grid-cols-2 md:gap-x-10 md:text-left">

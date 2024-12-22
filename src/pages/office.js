@@ -6,11 +6,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 const office = () => {
-	const images = [
-		"/office/image1.jpg", // Replace with the actual filenames
-		"/office/image2.jpg",
-		"/office/image3.jpg",
-	];
+	const images = ["/office/image1.jpg", "/office/image2.jpg", "/office/image3.jpg"];
 
 	return (
 		<>
@@ -26,7 +22,7 @@ const office = () => {
 					<div className="text-center">
 						<h1 className="text-2xl md:text-4xl font-bold text-gray-800">Welcome to Our Office</h1>
 						<p className="text-gray-600 text-lg mt-4 max-w-2xl">
-							Take a glimpse into our modern, comfortable, and welcoming environment. We strive to
+							Take a glimpse into our cozy, comfortable, and welcoming environment. We strive to
 							create an inviting space where you feel at ease.
 						</p>
 					</div>

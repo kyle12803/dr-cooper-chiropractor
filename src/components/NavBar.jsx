@@ -35,7 +35,11 @@ const NavBar = () => {
 				{/* Nav Links */}
 				<div className="hidden md:flex md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:gap-x-10">
 					{Object.entries(links).map(([name, route], index) => (
-						<Link key={index} href={route} className="text-gray-800 group transition duration-200">
+						<Link
+							key={index}
+							href={route}
+							className="text-gray-800 group transition duration-200 text-lg"
+						>
 							{name}
 							<span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-blue-300 mt-1"></span>
 						</Link>
