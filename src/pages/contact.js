@@ -46,7 +46,7 @@ const Contact = () => {
 					subject: "",
 					message: "",
 				});
-				setTimeout(() => setFormSubmitted(false), 3000);
+				setTimeout(() => setFormSubmitted(false), 6000);
 			} else {
 				alert("Failed to send the message. Please try again.");
 			}
