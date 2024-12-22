@@ -30,7 +30,7 @@ const home = () => {
 							alt="Dr. Ezra R. Cooper"
 							width={873}
 							height={1156}
-							className="ms-5 me-7 mb-8 md:mb-0 rounded-2xl w-[218px] h-[289px] sm:w-[291px] sm:h-[385px] align-middle"
+							className="ms-5 me-7 mb-8 md:mb-0 rounded-2xl w-[218px] h-[289px] sm:w-[291px] sm:h-[385px] align-middle shadow-lg"
 						/>
 
 						<div className="flex flex-col justify-center md:px-10">
