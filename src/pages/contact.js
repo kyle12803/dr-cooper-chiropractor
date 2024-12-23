@@ -61,7 +61,7 @@ const Contact = () => {
 	return (
 		<>
 			<Head>
-				<title>Dr. Ezra R. Cooper | Contact</title>
+				<title>Dr. Ezra R. Cooper Chiropractor | Contact</title>
 				<meta name="description" content="Dr. Ezra R. Cooper Chiropractor" />
 				<link rel="icon" href="/favicon.png" />
 			</Head>

@@ -8,8 +8,15 @@ const home = () => {
 	return (
 		<>
 			<Head>
-				<title>Dr. Ezra R. Cooper | Home</title>
-				<meta name="description" content="Dr. Ezra R. Cooper Chiropractor" />
+				<title>Dr. Ezra R. Cooper Chiropractor | Home</title>
+				<meta
+					name="description"
+					content="Get effective and personalized chiropractic care for pain relief in Syosset, NY. Book your consultation with Dr. Ezra R. Cooper today."
+				/>
+				<meta
+					name="keywords"
+					content="Chiropractor, Syosset NY, Long Island NY, Dr. Ezra Cooper, Chiropractic Care, Pain Relief, Sports Injuries, Pediatric Chiropractic, Geriatrics,  Nutritional Counseling"
+				/>
 				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<NavBar />
@@ -27,7 +34,7 @@ const home = () => {
 					<div className="mt-8 mb-10 flex flex-col md:flex-row items-center justify-start md:px-8 xl:px-12">
 						<Image
 							src="/ezra.jpg"
-							alt="Dr. Ezra R. Cooper"
+							alt="Dr. Ezra R. Cooper Chiropractor"
 							width={873}
 							height={1156}
 							className="ms-5 me-7 mb-8 md:mb-0 rounded-2xl w-[218px] h-[289px] sm:w-[291px] sm:h-[385px] align-middle shadow-lg"
